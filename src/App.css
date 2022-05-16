@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Comic Neue", cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: PinkyUnicorn;
+  src: url("./assets/font/Pinky\ Unicorn.ttf");
+}
+:root {
+  /*FONT--SIZES*/
+  --font-normal: 16px;
+  --font-xsm: 18px;
+  --font-sm: 20px;
+  --font-xmd: 22px;
+  --font-md: 25px;
+  --font-lg: 35px;
+  --font-xl: 40px;
+  --font-xxl: 70px;
+  /*COLORS*/
+  --black: #212121;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* ================= MEDIA QUERISE FONT ======================= */
+@media (max-width: 1399.98px) {
+  :root {
+    --font-normal: 16px;
+    --font-xsm: 18px;
+    --font-sm: 20px;
+    --font-xmd: 22px;
+    --font-md: 24px;
+    --font-lg: 32px;
+    --font-xl: 36px;
+    --font-xxl: 60px;
+  }
+}
+@media (max-width: 1199.98px) {
+  :root {
+    --font-normal: 16px;
+    --font-xsm: 18px;
+    --font-sm: 20px;
+    --font-xmd: 22px;
+    --font-md: 24px;
+    --font-lg: 30px;
+    --font-xl: 32px;
+    --font-xxl: 50px;
+  }
+}
+@media (max-width: 991.98px) {
+  :root {
+    --font-normal: 16px;
+    --font-xsm: 18px;
+    --font-sm: 20px;
+    --font-xmd: 22px;
+    --font-md: 23px;
+    --font-lg: 28px;
+    --font-xl: 30px;
+    --font-xxl: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  :root {
+    --font-normal: 16px;
+    --font-xsm: 18px;
+    --font-sm: 20px;
+    --font-xmd: 22px;
+    --font-md: 23px;
+    --font-lg: 26px;
+    --font-xl: 28px;
+    --font-xxl: 35px;
+  }
+}
+@media (max-width: 575.98px) {
+  :root {
+    --font-normal: 14px;
+    --font-xsm: 16px;
+    --font-sm: 18px;
+    --font-xmd: 20px;
+    --font-md: 22px;
+    --font-lg: 24px;
+    --font-xl: 25px;
+    --font-xxl: 30px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ======================FONT SIZES ======================== */
+.font-xxl {
+  font-size: var(--font-xxl) !important;
 }
 
-.App-link {
-  color: #61dafb;
+.font-xl {
+  font-size: var(--font-xl) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.font-lg {
+  font-size: var(--font-lg) !important;
+}
+
+.font-md {
+  font-size: var(--font-md) !important;
+}
+
+.font-xmd {
+  font-size: var(--font-xmd) !important;
+}
+
+.font-sm {
+  font-size: var(--font-sm) !important;
+}
+
+.font-xsm {
+  font-size: var(--font-xsm) !important;
+}
+
+.font-normal {
+  font-size: var(--font-normal) !important;
+}
+
+/* ======================= FONT WEIGHT============================== */
+
+.fw-normal {
+  font-weight: 400 !important;
+}
+
+/*COLORS====================CLASSES*/
+
+.black {
+  color: var(--black) !important;
+}
+
+/* ================COMMON CLASSES =========================== */
+
+.main_heading {
+  font-size: var(--font-xxl);
+  font-weight: normal;
+  font-family: PinkyUnicorn;
+  border: 1px solid #000000;
+  color: var(--black);
+}
+
+.heading {
+  font-size: var(--font-xl);
+  font-weight: normal;
+  font-family: PinkyUnicorn;
+  color: var(--black);
+}
+
+.main_para {
+  font-size: var(--font-xmd);
+  font-weight: normal;
+  color: var(--black);
+}
+
+.common_btn {
+  font-size: var(--font-lg);
+  font-weight: normal;
+  font-family: PinkyUnicorn;
+  background: linear-gradient(100.7deg, #b62aff -82.68%, #ff0df2 143.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }

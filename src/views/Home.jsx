@@ -11,14 +11,14 @@ import Roadmap from "../components/homepage/Roadmap";
 const Home = () => {
   return (
     <div>
-      <Header />
+      {/* <Header />
       <Hero />
-      <OurStory />
+      <OurStory /> */}
       <AboutUs />
-      <Roadmap />
+      {/* <Roadmap />
       <Team />
       <Faq />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
