@@ -242,7 +242,7 @@
 
 .border {
   opacity: 0.3;
-  border: 1px solid #000000 !important;
+  border-bottom: 1px solid #000000 !important;
   width: 70%;
 }
 
@@ -252,5 +252,5 @@
 }
 
 .footer_icon:hover {
-  transform: scale(1.04);
+  transform: scale(1.06);
 }
