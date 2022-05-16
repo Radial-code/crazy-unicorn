@@ -12,7 +12,7 @@
 }
 :root {
   /*FONT--SIZES*/
-  --font-normal: 16px;
+  --font-xs: 16px;
   --font-xsm: 18px;
   --font-sm: 20px;
   --font-xmd: 22px;
@@ -27,7 +27,7 @@
 /* ================= MEDIA QUERISE FONT ======================= */
 @media (max-width: 1399.98px) {
   :root {
-    --font-normal: 16px;
+    --font-xs: 16px;
     --font-xsm: 18px;
     --font-sm: 20px;
     --font-xmd: 22px;
@@ -39,7 +39,7 @@
 }
 @media (max-width: 1199.98px) {
   :root {
-    --font-normal: 16px;
+    --font-xs: 16px;
     --font-xsm: 18px;
     --font-sm: 20px;
     --font-xmd: 22px;
@@ -51,7 +51,7 @@
 }
 @media (max-width: 991.98px) {
   :root {
-    --font-normal: 16px;
+    --font-xs: 16px;
     --font-xsm: 18px;
     --font-sm: 20px;
     --font-xmd: 22px;
@@ -63,26 +63,26 @@
 }
 @media (max-width: 767.98px) {
   :root {
-    --font-normal: 16px;
+    --font-xs: 16px;
     --font-xsm: 18px;
     --font-sm: 20px;
     --font-xmd: 22px;
     --font-md: 23px;
     --font-lg: 26px;
     --font-xl: 28px;
-    --font-xxl: 35px;
+    --font-xxl: 38px;
   }
 }
 @media (max-width: 575.98px) {
   :root {
-    --font-normal: 14px;
+    --font-xs: 14px;
     --font-xsm: 16px;
     --font-sm: 18px;
     --font-xmd: 20px;
     --font-md: 22px;
     --font-lg: 24px;
     --font-xl: 25px;
-    --font-xxl: 30px;
+    --font-xxl: 35px;
   }
 }
 
@@ -115,8 +115,8 @@
   font-size: var(--font-xsm) !important;
 }
 
-.font-normal {
-  font-size: var(--font-normal) !important;
+.font-xs {
+  font-size: var(--font-xs) !important;
 }
 
 /* ======================= FONT WEIGHT============================== */
@@ -137,7 +137,7 @@
   font-size: var(--font-xxl);
   font-weight: normal;
   font-family: PinkyUnicorn;
-  border: 1px solid #000000;
+  /* border: 1px solid #000000; */
   color: var(--black);
 }
 
@@ -163,4 +163,94 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+
+.opacity_07 {
+  opacity: 0.7;
+}
+
+/*TEAM=============SECTION==================START*/
+.team_card_bg {
+  background: rgba(255, 255, 255, 0.57);
+  /* backdrop-filter: blur(164.191px); */
+  border-radius: 25px;
+  padding: 0 55px 20px;
+  border: 1px solid #b62aff;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.team_card_bg:hover {
+  transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+  .team_card_bg {
+    padding: 0px 25px 20px;
+  }
+}
+
+.horse_img {
+  margin-top: -38px;
+}
+
+.small_horse {
+  margin-bottom: -50px;
+  margin-bottom: -59px;
+  margin-left: 177px;
+}
+
+/*FAQ=================SECTION==============CSS================START*/
+.accordion-button {
+  font-size: var(--font-xl);
+  font-weight: normal;
+  font-family: PinkyUnicorn;
+  color: var(--black);
+}
+
+.accordion-body {
+  font-size: var(--font-xmd);
+  font-weight: normal;
+  color: var(--black);
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--black);
+  background-color: transparent;
+  box-shadow: none !important;
+}
+
+.accordion-button:focus {
+  border-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+.accordion-item {
+  background-color: transparent;
+  border: none !important;
+  margin-top: 20px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("./assets/image/faq/faq-icon-one.png");
+}
+
+.accordion-button::after {
+  background-image: url("./assets/image/faq/faq-icon-two.png");
+}
+
+.border {
+  opacity: 0.3;
+  border: 1px solid #000000 !important;
+  width: 70%;
+}
+
+/*FOOTER===============SECTION=============CSS==================START*/
+.footer_icon {
+  transition: all 0.4s ease-in-out;
+}
+
+.footer_icon:hover {
+  transform: scale(1.04);
 }
