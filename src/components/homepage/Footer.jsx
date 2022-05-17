@@ -1,12 +1,12 @@
 import React from "react";
 import FooterLogo from "../../assets/image/footer/footer-logo.png";
-import twitter from "../../assets/image/svg/twitter.svg";
-import insta from "../../assets/image/svg/insta.svg";
-import discord from "../../assets/image/svg/discord.svg";
+// import { DiscordIcon } from "../common/Icons";
+import { DiscordIcon, InstaIcon, TwitterIcon } from "../common/Icons";
+import Input from "../../assets/image/footer/Input.png";
 const Footer = () => {
   return (
     <>
-      <section className="py-5">
+      <section className="py-5 all_bg_img">
         <div className="container pt-md-5">
           <div className="row">
             <div className="col-lg-8 m-auto">
@@ -20,25 +20,52 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="subscribe_now mt-4">
+                <div class="subscribe_form">
+                  <div class="input-group">
+                    <div class="d-flex align-items-center">
+                      <img src={Input} alt="input.png" />
+                    </div>
+                    <input
+                      type="email"
+                      className="form-control"
+                      placeholder="Your email"
+                    />
+                    <span className="input-group-btn">
+                      <button className="footer_btn">subscribe</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="row mt-xxl-5 pt-lg-5">
             <div className="col-8 m-auto pt-lg-5">
               <div className="text-center mt-sm-5 pt-5">
                 <img src={FooterLogo} alt="footer-logo" />
                 <div className="mt-sm-5 pt-4">
-                  <a href="https://twitter.com/i/flow/login" target={"_blank"}>
-                    <img className="footer_icon" src={twitter} alt="twitter" />
+                  <a
+                    className="footer_icon"
+                    href="https://twitter.com/i/flow/login"
+                    target={"_blank"}
+                  >
+                    <TwitterIcon />
                   </a>
                   <a
+                    className="mx-3 footer_icon"
                     href="https://www.instagram.com/accounts/login/"
                     target={"_blank"}
                   >
-                    <img className="mx-4 footer_icon" src={insta} alt="insta" />
+                    <InstaIcon />
                   </a>
                   <a
+                    className="footer_icon"
                     href="https://support.discord.com/hc/en-us/community/posts/360056220432-Login"
                     target={"_blank"}
                   >
-                    <img className="footer_icon" src={discord} alt="discord" />
+                    <DiscordIcon />
                   </a>
                 </div>
                 <p className="font-sm fw-normal opacity_07 mt-4 mt-sm-5 mb-0">

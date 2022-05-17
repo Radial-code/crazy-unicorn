@@ -1,16 +1,21 @@
 import React from "react";
 import { Accordion } from "react-bootstrap";
-// import FaqIcon from "../../assets/image/faq/faq-icon.png";
+import TextHorse from "../../assets/image/team/text-upper-horse.png";
 
 const Faq = () => {
   return (
     <>
-      <section className="py-5">
-        <div className="container">
-          <div className="text-center">
-            <h5 className="main_heading">FAQS</h5>
+      <section className="py-5 header_bg">
+        <div className="container mt-5">
+          <div className="text-center position-relative">
+            <h5 className="main_heading h-80">FAQS</h5>
+            <img
+              className="position-absolute center_horse"
+              src={TextHorse}
+              alt="text-upper-horse"
+            />
           </div>
-          <div className="row mt-5">
+          <div className="row pt-5">
             <div className="col-lg-11 m-auto">
               <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">

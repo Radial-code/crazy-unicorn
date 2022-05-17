@@ -1,20 +1,18 @@
 import React from "react";
 import TeamHorse from "../../assets/image/team/TeamHorse.png";
-import TeamUpperHorse from "../../assets/image/team/text-upper-horse.png";
+import TextHorse from "../../assets/image/team/text-upper-horse.png";
 const Team = () => {
   return (
     <>
-      <section className="py-5">
-        <div className="container">
-          <div className="text-center">
-            {/* <div>
-              <img
-                className="small_horse"
-                src={TeamUpperHorse}
-                alt="text-upper-horse"
-              />
-            </div> */}
-            <h4 className="main_heading">Team</h4>
+      <section className="py-5 all_bg_img">
+        <div className="container mt-xxl-5 pt-xxl-5">
+          <div className="text-center mt-xxl-5 pt-xxl-5 position-relative">
+            <h4 className="main_heading mt-xxl-5 pt-xxl-5 h-80">Team</h4>
+            <img
+              className="position-absolute team_horse"
+              src={TextHorse}
+              alt="text-upper-horse"
+            />
           </div>
           <div className="row pt-sm-5 justify-content-center">
             <div className="col-sm-6 col-lg-4 pt-5">

@@ -10,6 +10,10 @@
   font-family: PinkyUnicorn;
   src: url("./assets/font/Pinky\ Unicorn.ttf");
 }
+
+.ff-pinky {
+  font-family: PinkyUnicorn;
+}
 :root {
   /*FONT--SIZES*/
   --font-xs: 16px;
@@ -137,7 +141,6 @@
   font-size: var(--font-xxl);
   font-weight: normal;
   font-family: PinkyUnicorn;
-  /* border: 1px solid #000000; */
   color: var(--black);
 }
 
@@ -154,19 +157,17 @@
   color: var(--black);
 }
 
-.common_btn {
-  font-size: var(--font-lg);
-  font-weight: normal;
-  font-family: PinkyUnicorn;
-  background: linear-gradient(100.7deg, #b62aff -82.68%, #ff0df2 143.2%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
 .opacity_07 {
   opacity: 0.7;
+}
+
+/*ABOUT================SECTION====================CSS===================START*/
+.all_bg_img {
+  background-image: url("./assets/image/faq/bg-img.png");
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*TEAM=============SECTION==================START*/
@@ -194,10 +195,18 @@
   margin-top: -38px;
 }
 
-.small_horse {
-  margin-bottom: -50px;
-  margin-bottom: -59px;
-  margin-left: 177px;
+.team_horse {
+  bottom: -10%;
+}
+
+@media (max-width: 1440px) {
+  .team_horse {
+    top: -70px;
+  }
+}
+
+.h-80 {
+  height: 80px;
 }
 
 /*FAQ=================SECTION==============CSS================START*/
@@ -206,6 +215,7 @@
   font-weight: normal;
   font-family: PinkyUnicorn;
   color: var(--black);
+  background-color: transparent;
 }
 
 .accordion-body {
@@ -253,4 +263,135 @@
 
 .footer_icon:hover {
   transform: scale(1.06);
+}
+
+.input-group {
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #f08cfb;
+}
+.form-control {
+  background-color: white;
+  border: 1px solid white !important;
+  padding: 10px;
+}
+.form-control:focus {
+  box-shadow: none !important;
+}
+.footer_btn {
+  border: 1px solid #000 !important;
+  margin-left: 2px;
+  font-size: var(--font-lg);
+  font-weight: 400;
+  font-family: PinkyUnicorn;
+  background: linear-gradient(100.7deg, #b62aff -82.68%, #ff0df2 143.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 10px 30px;
+  border-radius: 8.05063px;
+}
+
+.subscribe_form {
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 0px 2px 5px 0px rgba(10, 6, 20, 0.24);
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  .subscribe_form {
+    width: 100%;
+  }
+
+  .footer_btn {
+    padding: 10px 20px;
+  }
+}
+
+/*HEADER=====HERO=============SECTION=============CSS===================START*/
+.header_bg {
+  background-image: url("./assets/image/header/header-bg.png");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*ROADMAP=================SECTION==============CSS=================START*/
+.position_img {
+  right: 25%;
+  top: 15%;
+  bottom: -10%;
+}
+
+@media (max-width: 1700px) {
+  .position_img {
+    right: 20%;
+  }
+}
+
+/*OUR============STORY================SECTION================START*/
+.our_bg {
+  background-image: url("./assets/image/faq/bg-img.png");
+  min-height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.center_horse {
+  bottom: 45px;
+  left: 53%;
+}
+
+.left_73 {
+  left: 37%;
+  bottom: 27%;
+}
+
+.mint_btn {
+  padding: 5px 30px;
+  border: 1px solid var(--black);
+  border-radius: 12px;
+  color: #d71efa;
+  box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 992px) {
+  .left_73 {
+    left: 15%;
+    bottom: 15%;
+  }
+}
+
+/*BACK TO TOP============CSS================START*/
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background: #1eadb6;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: updown-element-animation 2s infinite;
+}
+
+@keyframes updown-element-animation {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
