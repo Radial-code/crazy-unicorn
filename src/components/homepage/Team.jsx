@@ -7,7 +7,7 @@ const Team = () => {
     <>
       <section
         className="py-5 team_bg  position-relative margin_top_minus"
-        id="TEAM"
+        id="team"
       >
         <div className="position-absolute top-0 end-0">
           <img
@@ -16,13 +16,13 @@ const Team = () => {
             alt="position-one"
           />
         </div>
-        <div className="container mt-xxl-5 pt-xxl-5">
+        <div className="container mt-5 pt-5">
           <div
-            className="text-center mt-xxl-5 pt-xxl-5 position-relative"
+            className="text-center mt-5 pt-5 position-relative"
             data-aos="fade-down"
-            data-aos-duration="3000"
+            data-aos-duration="1500"
           >
-            <h4 className="main_heading mt-xxl-5 pt-xxl-5 h-80">Team</h4>
+            <h4 className="main_heading mt-5 pt-5 h-80">Team</h4>
             <img
               className="position-absolute team_horse moving_annimation_horse"
               src={TextHorse}
@@ -33,7 +33,7 @@ const Team = () => {
             <div
               className="col-sm-6 col-lg-4 pt-5 z_index_1"
               data-aos="zoom-in"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               <div className="team_card_bg text-center h-100">
                 <img
@@ -48,7 +48,7 @@ const Team = () => {
             <div
               className="col-sm-6 col-lg-4 pt-5 z_index_1"
               data-aos="zoom-in"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               <div className="team_card_bg text-center h-100">
                 <img
@@ -63,7 +63,7 @@ const Team = () => {
             <div
               className="col-sm-6 col-lg-4 pt-5 z_index_1"
               data-aos="zoom-in"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               <div className="team_card_bg text-center h-100">
                 <img

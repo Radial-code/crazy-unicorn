@@ -11,9 +11,11 @@
   content: "";
   display: block;
   width: 0%;
-  height: 1.5px;
-  background: var(--color-white);
-  left: 50%;
+  height: 10px;
+  background-image: url("./assets/image/header/hover-line.png") !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 0%;
   bottom: 0;
   -webkit-transition: 0.4s ease;
   -o-transition: 0.4s ease;
@@ -79,14 +81,14 @@
   display: block;
   width: 0%;
   height: 0.5vh;
-  background: var(--color-light-green);
+  background-image: url("./assets/image/header/hover-line.png") !important;
   left: 50%;
   bottom: 0;
   border-radius: 30px;
 }
 
 .navbar-overlay li a:hover {
-  color: var(--color-light-green) !important;
+  color: red !important;
 }
 
 .navbar-overlay li:hover::after {

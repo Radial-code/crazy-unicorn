@@ -16,13 +16,13 @@
   font-family: PinkyUnicorn;
 }
 
-/* body {
+body {
   background-image: url("./assets/image/body/body-bg.png");
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-} */
+  /* background-size: cover; */
+}
 :root {
   /*FONT--SIZES*/
   --font-xs: 16px;
@@ -210,24 +210,6 @@
   cursor: pointer;
 }
 
-/*NAVBAR=============CSS==============START*/
-.hoverable {
-  position: relative;
-}
-
-.hoverable::after {
-  position: absolute;
-  width: 0px;
-  height: 2px;
-  background-color: black;
-  content: "";
-  display: block;
-  transition: all 0.4s ease-in-out;
-}
-
-.hoverable:hover::after {
-  width: 100%;
-}
 .overflow-x-hidden {
   overflow-x: hidden !important ;
 }
@@ -303,22 +285,22 @@
 }
 
 /*ABOUT================SECTION====================CSS===================START*/
-.about_bg {
+/* .about_bg {
   background-image: url("./assets/image/aboutus/about_bg.png");
   min-height: 100vh;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 /*TEAM=============SECTION==================START*/
-.team_bg {
+/* .team_bg {
   background-image: url("./assets/image/team/team-bg.png");
   min-height: 100vh;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 .team_card_bg {
   background: rgba(255, 255, 255, 0.57);
   border-radius: 25px;
@@ -348,7 +330,7 @@
 
 @media (max-width: 1440px) {
   .team_horse {
-    top: -70px;
+    top: 80px;
   }
 }
 
@@ -357,13 +339,13 @@
 }
 
 /*FAQ=================SECTION==============CSS================START*/
-.faq_bg {
+/* .faq_bg {
   background-image: url("./assets/image/faq/faq-bg.png");
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-}
+} */
 .accordion-button {
   font-size: var(--font-xl);
   font-weight: normal;
@@ -412,13 +394,13 @@
 }
 
 /*FOOTER===============SECTION=============CSS==================START*/
-.footer_bg {
+/* .footer_bg {
   background-image: url("./assets/image/footer/footer-bg.png");
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-}
+} */
 .footer_icon {
   transition: all 0.4s ease-in-out;
   display: inline-block;
@@ -480,12 +462,12 @@
 }
 
 /*HEADER=====HERO=============SECTION=============CSS===================START*/
-.hero_bg {
+/* .hero_bg {
   background-image: url("./assets/image/header/header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-}
+} */
 
 .min_height_100 {
   min-height: calc(100vh - 100px);
@@ -512,13 +494,42 @@
   }
 }
 
-.roadmap_bg {
+.top-70 {
+  top: 80%;
+  left: 15%;
+}
+
+.margin_80 {
+  margin-left: -80px;
+}
+
+.margin_40 {
+  margin-left: -40px;
+}
+@media (max-width: 500px) {
+  .margin_80 {
+    margin-left: -40px;
+  }
+
+  .margin_40 {
+    margin-left: -10px;
+  }
+
+  .max-width-200 {
+    max-width: 200px;
+  }
+}
+
+.top-10 {
+  top: 10%;
+}
+/* .roadmap_bg {
   background-image: url("./assets/image//roadmap/roadmap-bg.png");
   min-height: 100vh;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 /*OUR============STORY================SECTION================START*/
 .center_horse {

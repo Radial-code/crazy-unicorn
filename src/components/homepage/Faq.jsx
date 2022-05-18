@@ -9,7 +9,7 @@ const Faq = () => {
     <>
       <section
         className="py-5 faq_bg position-relative margin_top_minus"
-        id="FAQs"
+        id="faqs"
       >
         <div className="position-absolute top-0">
           <img
@@ -29,7 +29,7 @@ const Faq = () => {
           <div
             className="text-center position-relative"
             data-aos="fade-down"
-            data-aos-duration="3000"
+            data-aos-duration="1500"
           >
             <h5 className="main_heading h-80">FAQS</h5>
             <img
@@ -42,7 +42,7 @@ const Faq = () => {
             <div
               className="col-lg-11 m-auto z_index_1"
               data-aos="zoom-in"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">

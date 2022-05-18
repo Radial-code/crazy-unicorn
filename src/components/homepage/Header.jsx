@@ -46,50 +46,50 @@ const Header = () => {
               </div>
               <div className="nav-list-items w-100">
                 <ul className="list-unstyled d-flex align-items-center m-0">
-                  <li className="hoverable ">
+                  <li className=" ">
                     <a
                       className="text-decoration-none navbar-link main_para ff-pinky"
-                      href="#HOME"
+                      href="#home"
                     >
                       Home
                     </a>
                   </li>
-                  <li className="hoverable ">
+                  <li className=" ">
                     <a
                       className="text-decoration-none navbar-link text-nowrap main_para ff-pinky"
-                      href="#STORY"
+                      href="#story"
                     >
                       Story
                     </a>
                   </li>
-                  <li className="hoverable ">
+                  <li className=" ">
                     <a
                       className="text-decoration-none navbar-link main_para ff-pinky"
-                      href="#ABOUT"
+                      href="#about"
                     >
                       About
                     </a>
                   </li>
-                  <li className="hoverable ">
+                  <li className=" ">
                     <a
                       className="text-decoration-none navbar-link main_para ff-pinky"
-                      href="#ROADMAP"
+                      href="#roadmap"
                     >
                       Roadmap
                     </a>
                   </li>
-                  <li className="hoverable ">
+                  <li className=" ">
                     <a
                       className="text-decoration-none navbar-link main_para ff-pinky"
-                      href="#TEAM"
+                      href="#team"
                     >
                       team
                     </a>
                   </li>
-                  <li className="hoverable ">
+                  <li className=" ">
                     <a
                       className="text-decoration-none navbar-link main_para ff-pinky"
-                      href="#FAQs"
+                      href="#faqs"
                     >
                       FAQs
                     </a>
@@ -167,68 +167,50 @@ const Header = () => {
 
             <div className={`navbar-overlay  `}>
               <ul className="h-100 list-unstyled d-flex flex-column align-items-center justify-content-center m-0">
-                <li
-                  className="hoverable"
-                  onClick={() => handldeOverlayActive()}
-                >
+                <li className="" onClick={() => handldeOverlayActive()}>
                   <a
-                    className="text-decoration-none text-white main_para ff-pinky hoverable"
-                    href="#HOME"
+                    className="text-decoration-none text-white main_para ff-pinky "
+                    href="#home"
                   >
                     Home
                   </a>
                 </li>
-                <li
-                  className="hoverable"
-                  onClick={() => handldeOverlayActive()}
-                >
+                <li className="" onClick={() => handldeOverlayActive()}>
                   <a
-                    className="text-decoration-none text-white text-nowrap main_para ff-pinky hoverable"
-                    href="#STORY"
+                    className="text-decoration-none text-white text-nowrap main_para ff-pinky "
+                    href="#story"
                   >
                     Story
                   </a>
                 </li>
-                <li
-                  className="hoverable"
-                  onClick={() => handldeOverlayActive()}
-                >
+                <li className="" onClick={() => handldeOverlayActive()}>
                   <a
-                    className="text-decoration-none text-white main_para ff-pinky hoverable"
-                    href="#ABOUT"
+                    className="text-decoration-none text-white main_para ff-pinky "
+                    href="#about"
                   >
                     About
                   </a>
                 </li>
-                <li
-                  className="hoverable"
-                  onClick={() => handldeOverlayActive()}
-                >
+                <li className="" onClick={() => handldeOverlayActive()}>
                   <a
-                    className="text-decoration-none text-white main_para ff-pinky hoverable"
-                    href="#ROADMAP"
+                    className="text-decoration-none text-white main_para ff-pinky "
+                    href="#roadmap"
                   >
                     Roadmap
                   </a>
                 </li>
-                <li
-                  className="hoverable"
-                  onClick={() => handldeOverlayActive()}
-                >
+                <li className="" onClick={() => handldeOverlayActive()}>
                   <a
-                    className="text-decoration-none text-white main_para ff-pinky hoverable"
-                    href="#TEAM"
+                    className="text-decoration-none text-white main_para ff-pinky "
+                    href="#team"
                   >
                     team
                   </a>
                 </li>
-                <li
-                  className=" hoverable"
-                  onClick={() => handldeOverlayActive()}
-                >
+                <li className=" " onClick={() => handldeOverlayActive()}>
                   <a
                     className="text-decoration-none text-white main_para ff-pinky"
-                    href="#FAQs"
+                    href="#faqs"
                   >
                     FAQs
                   </a>

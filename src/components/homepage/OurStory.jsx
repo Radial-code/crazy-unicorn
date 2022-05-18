@@ -5,7 +5,7 @@ import OurPositionOne from "../../assets/image/ourstory/position-one.png";
 const OurStory = () => {
   return (
     <>
-      <section className="py-5 position-relative margin_top_minus" id="STORY">
+      <section className="py-5 position-relative margin_top_minus" id="story">
         <div className="position-absolute top-0">
           <img
             className="moving_annimation"
@@ -14,7 +14,11 @@ const OurStory = () => {
           />
         </div>
         <div className="container">
-          <div class="text-center">
+          <div
+            class="text-center"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+          >
             <div class="pt-4 position-relative">
               <h1 class="main_heading h-80">OUR STORY</h1>
               <img
@@ -24,7 +28,11 @@ const OurStory = () => {
               />
             </div>
             <div className="row">
-              <div className="col-12 col-lg-10 m-auto">
+              <div
+                className="col-12 col-lg-10 m-auto"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+              >
                 <p class="main_para">
                   Vestibulum, id lacus, volutpat nec. Magna senectus enim nisi,
                   sit. Sagittis, ac velit gravida a nullam lobortis in

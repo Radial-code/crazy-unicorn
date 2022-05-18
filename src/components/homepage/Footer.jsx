@@ -34,7 +34,7 @@ const Footer = () => {
             <div
               className="col-lg-8 m-auto"
               data-aos="fade-down"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               <div className="text-center">
                 <h4 className="main_heading">Sign up for the latest news</h4>
@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
           </div>
           <div class="row">
-            <div class="col-12" data-aos="zoom-in" data-aos-duration="3000">
+            <div class="col-12" data-aos="zoom-in" data-aos-duration="1500">
               <div class="subscribe_now mt-4">
                 <div class="subscribe_form">
                   <div class="input-group">
@@ -71,7 +71,7 @@ const Footer = () => {
             <div
               className="col-8 m-auto pt-lg-5 z_index_1"
               data-aos="zoom-in"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               <div className="text-center mt-sm-5 pt-5">
                 <img src={FooterLogo} alt="footer-logo" />
