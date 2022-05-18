@@ -1,10 +1,11 @@
 import React from "react";
 import TextHorse from "../../assets/image/team/text-upper-horse.png";
+// import Position from "../../assets/image/aboutus/position-one.png";
 import OurPositionOne from "../../assets/image/ourstory/position-one.png";
 const OurStory = () => {
   return (
     <>
-      <section className="py-5 our_bg position-relative">
+      <section className="py-5 position-relative margin_top_minus" id="STORY">
         <div className="position-absolute top-0">
           <img
             className="moving_annimation"

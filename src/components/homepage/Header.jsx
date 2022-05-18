@@ -5,6 +5,7 @@ import logo from "../../assets/image/header/header-logo.png";
 import HeroRainbow from "../../assets/image/hero/hero-rainbow.png";
 import HeroPositionOne from "../../assets/image/hero/hero-position-one.png";
 import HeroPositionTwo from "../../assets/image/hero/hero-position-two.png";
+import Hero from "./Hero";
 
 const Header = () => {
   const BeforeDesktop = ({ children }) => {
@@ -22,8 +23,8 @@ const Header = () => {
 
   return (
     <>
-      <section className="position-relative hero_bg">
-        <div className="position-absolute top-20">
+      <section className="position-relative hero_bg" id="home">
+        <div className="position-absolute top-20 ">
           <img
             className="w-100 moving_annimation"
             src={HeroPositionOne}
@@ -37,7 +38,7 @@ const Header = () => {
             alt="hero-position-two"
           />
         </div>
-        <div className="navbar-wrapper w-100 position-relative header_bg">
+        <div className="navbar-wrapper w-100 position-relative z-5 header_bg">
           <Desktop>
             <div className="container d-flex justify-content-between align-items-center">
               <div className="nav-logo w-100 cursor_pointer ">
@@ -45,50 +46,50 @@ const Header = () => {
               </div>
               <div className="nav-list-items w-100">
                 <ul className="list-unstyled d-flex align-items-center m-0">
-                  <li>
+                  <li className="hoverable ">
                     <a
                       className="text-decoration-none navbar-link main_para ff-pinky"
-                      href="#home"
+                      href="#HOME"
                     >
                       Home
                     </a>
                   </li>
-                  <li>
+                  <li className="hoverable ">
                     <a
                       className="text-decoration-none navbar-link text-nowrap main_para ff-pinky"
-                      href="#proof"
+                      href="#STORY"
                     >
                       Story
                     </a>
                   </li>
-                  <li>
+                  <li className="hoverable ">
                     <a
                       className="text-decoration-none navbar-link main_para ff-pinky"
-                      href="#adopt-now"
+                      href="#ABOUT"
                     >
                       About
                     </a>
                   </li>
-                  <li>
+                  <li className="hoverable ">
                     <a
                       className="text-decoration-none navbar-link main_para ff-pinky"
-                      href="#roadmap"
+                      href="#ROADMAP"
                     >
                       Roadmap
                     </a>
                   </li>
-                  <li>
+                  <li className="hoverable ">
                     <a
                       className="text-decoration-none navbar-link main_para ff-pinky"
-                      href="#roadmap"
+                      href="#TEAM"
                     >
                       team
                     </a>
                   </li>
-                  <li>
+                  <li className="hoverable ">
                     <a
                       className="text-decoration-none navbar-link main_para ff-pinky"
-                      href="#faq"
+                      href="#FAQs"
                     >
                       FAQs
                     </a>
@@ -99,22 +100,22 @@ const Header = () => {
               <div className="w-100 d-flex justify-content-end  ">
                 <a
                   target="_blank"
-                  href="https://twitter.com/Bullishlybred"
-                  className="px-2"
+                  href="https://twitter.com/i/flow/login"
+                  className="px-2 footer_icon"
                 >
                   <TwitterIcon />
                 </a>
                 <a
                   target="_blank"
-                  href="https://www.instagram.com/Bullishlybred/"
-                  className="px-2"
+                  href="https://www.instagram.com/accounts/login/?hl=en"
+                  className="px-2 footer_icon"
                 >
                   <InstaIcon />
                 </a>
                 <a
                   target="_blank"
-                  href="https://discord.com/invite/VVxUnu5mUS"
-                  className="px-2"
+                  href="https://support.discord.com/hc/en-us/community/posts/360056220432-Login"
+                  className="px-2 footer_icon"
                 >
                   <DiscordIcon />
                 </a>
@@ -124,27 +125,31 @@ const Header = () => {
           <BeforeDesktop>
             <div className="px-3 d-flex justify-content-between align-items-center">
               <div className="nav-logo">
-                <img className="nav-logo-small" src={logo} alt="logo" />
+                <img
+                  className="nav-logo-small cursor_pointer"
+                  src={logo}
+                  alt="logo"
+                />
               </div>
               <div className=" d-flex justify-content-end  ">
                 <a
                   target="_blank"
                   href="https://twitter.com/Bullishlybred"
-                  className="px-sm-2 px-1 header-svg"
+                  className="px-sm-2 px-1 header-svg footer_icon"
                 >
                   <TwitterIcon />
                 </a>
                 <a
                   target="_blank"
                   href="https://www.instagram.com/Bullishlybred/"
-                  className="px-sm-2 px-1 header-svg"
+                  className="px-sm-2 px-1 header-svg footer_icon"
                 >
                   <InstaIcon />
                 </a>
                 <a
                   target="_blank"
                   href="https://discord.com/invite/VVxUnu5mUS"
-                  className="px-sm-2 px-1 header-svg"
+                  className="px-sm-2 px-1 header-svg footer_icon"
                 >
                   <DiscordIcon />
                 </a>
@@ -162,50 +167,68 @@ const Header = () => {
 
             <div className={`navbar-overlay  `}>
               <ul className="h-100 list-unstyled d-flex flex-column align-items-center justify-content-center m-0">
-                <li onClick={() => handldeOverlayActive()}>
+                <li
+                  className="hoverable"
+                  onClick={() => handldeOverlayActive()}
+                >
                   <a
-                    className="text-decoration-none text-white main_para ff-pinky"
-                    href="#home"
+                    className="text-decoration-none text-white main_para ff-pinky hoverable"
+                    href="#HOME"
                   >
                     Home
                   </a>
                 </li>
-                <li onClick={() => handldeOverlayActive()}>
+                <li
+                  className="hoverable"
+                  onClick={() => handldeOverlayActive()}
+                >
                   <a
-                    className="text-decoration-none text-white text-nowrap main_para ff-pinky"
-                    href="#proof"
+                    className="text-decoration-none text-white text-nowrap main_para ff-pinky hoverable"
+                    href="#STORY"
                   >
                     Story
                   </a>
                 </li>
-                <li onClick={() => handldeOverlayActive()}>
+                <li
+                  className="hoverable"
+                  onClick={() => handldeOverlayActive()}
+                >
                   <a
-                    className="text-decoration-none text-white main_para ff-pinky"
-                    href="#adopt-now"
+                    className="text-decoration-none text-white main_para ff-pinky hoverable"
+                    href="#ABOUT"
                   >
                     About
                   </a>
                 </li>
-                <li onClick={() => handldeOverlayActive()}>
+                <li
+                  className="hoverable"
+                  onClick={() => handldeOverlayActive()}
+                >
                   <a
-                    className="text-decoration-none text-white main_para ff-pinky"
-                    href="#roadmap"
+                    className="text-decoration-none text-white main_para ff-pinky hoverable"
+                    href="#ROADMAP"
                   >
                     Roadmap
                   </a>
                 </li>
-                <li onClick={() => handldeOverlayActive()}>
+                <li
+                  className="hoverable"
+                  onClick={() => handldeOverlayActive()}
+                >
                   <a
-                    className="text-decoration-none text-white main_para ff-pinky"
-                    href="#roadmap"
+                    className="text-decoration-none text-white main_para ff-pinky hoverable"
+                    href="#TEAM"
                   >
                     team
                   </a>
                 </li>
-                <li onClick={() => handldeOverlayActive()}>
+                <li
+                  className=" hoverable"
+                  onClick={() => handldeOverlayActive()}
+                >
                   <a
                     className="text-decoration-none text-white main_para ff-pinky"
-                    href="#faq"
+                    href="#FAQs"
                   >
                     FAQs
                   </a>
@@ -214,13 +237,7 @@ const Header = () => {
             </div>
           </BeforeDesktop>
         </div>
-        <div className="m-5 p-5">
-          <div className="row justify-content-center mt-0">
-            <div className="col mt-5">
-              <img className="w-100" src={HeroRainbow} alt="" />
-            </div>
-          </div>
-        </div>
+        <Hero />
       </section>
     </>
   );

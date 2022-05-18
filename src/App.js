@@ -40,7 +40,7 @@ const App = () => {
         <Home />
       ) : (
         <div className="min-vh-100 d-flex flex-column justify-content-center align-items-center">
-          <img className="" src={LogoImg} />{" "}
+          <img className="moving_annimation" src={LogoImg} />{" "}
         </div>
       )}{" "}
       <>

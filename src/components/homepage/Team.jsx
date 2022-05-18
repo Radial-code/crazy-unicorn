@@ -5,7 +5,10 @@ import Position from "../../assets/image/aboutus/position-one.png";
 const Team = () => {
   return (
     <>
-      <section className="py-5 all_bg_img  position-relative">
+      <section
+        className="py-5 team_bg  position-relative margin_top_minus"
+        id="TEAM"
+      >
         <div className="position-absolute top-0 end-0">
           <img
             className="moving_annimation"
@@ -14,16 +17,24 @@ const Team = () => {
           />
         </div>
         <div className="container mt-xxl-5 pt-xxl-5">
-          <div className="text-center mt-xxl-5 pt-xxl-5 position-relative">
+          <div
+            className="text-center mt-xxl-5 pt-xxl-5 position-relative"
+            data-aos="fade-down"
+            data-aos-duration="3000"
+          >
             <h4 className="main_heading mt-xxl-5 pt-xxl-5 h-80">Team</h4>
             <img
-              className="position-absolute team_horse"
+              className="position-absolute team_horse moving_annimation_horse"
               src={TextHorse}
               alt="text-upper-horse"
             />
           </div>
           <div className="row pt-sm-5 justify-content-center">
-            <div className="col-sm-6 col-lg-4 pt-5">
+            <div
+              className="col-sm-6 col-lg-4 pt-5 z_index_1"
+              data-aos="zoom-in"
+              data-aos-duration="3000"
+            >
               <div className="team_card_bg text-center h-100">
                 <img
                   className="w-100 horse_img"
@@ -34,7 +45,11 @@ const Team = () => {
                 <p className="main_para mb-0">(CEO)</p>
               </div>
             </div>
-            <div className="col-sm-6 col-lg-4 pt-5">
+            <div
+              className="col-sm-6 col-lg-4 pt-5 z_index_1"
+              data-aos="zoom-in"
+              data-aos-duration="3000"
+            >
               <div className="team_card_bg text-center h-100">
                 <img
                   className="w-100 horse_img"
@@ -45,7 +60,11 @@ const Team = () => {
                 <p className="main_para mb-0">(Founder)</p>
               </div>
             </div>
-            <div className="col-sm-6 col-lg-4 pt-5">
+            <div
+              className="col-sm-6 col-lg-4 pt-5 z_index_1"
+              data-aos="zoom-in"
+              data-aos-duration="3000"
+            >
               <div className="team_card_bg text-center h-100">
                 <img
                   className="w-100 horse_img"

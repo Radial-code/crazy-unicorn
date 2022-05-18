@@ -7,7 +7,10 @@ import Position from "../../assets/image/aboutus/position-one.png";
 const Faq = () => {
   return (
     <>
-      <section className="py-5 header_bg position-relative">
+      <section
+        className="py-5 faq_bg position-relative margin_top_minus"
+        id="FAQs"
+      >
         <div className="position-absolute top-0">
           <img
             className="moving_annimation"
@@ -23,16 +26,24 @@ const Faq = () => {
           />
         </div>
         <div className="container mt-5">
-          <div className="text-center position-relative">
+          <div
+            className="text-center position-relative"
+            data-aos="fade-down"
+            data-aos-duration="3000"
+          >
             <h5 className="main_heading h-80">FAQS</h5>
             <img
-              className="position-absolute center_horse"
+              className="position-absolute center_horse moving_annimation_horse"
               src={TextHorse}
               alt="text-upper-horse"
             />
           </div>
-          <div className="row pt-5">
-            <div className="col-lg-11 m-auto">
+          <div className="row pt-sm-5">
+            <div
+              className="col-lg-11 m-auto z_index_1"
+              data-aos="zoom-in"
+              data-aos-duration="3000"
+            >
               <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
