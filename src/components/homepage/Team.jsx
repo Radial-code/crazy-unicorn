@@ -1,10 +1,18 @@
 import React from "react";
 import TeamHorse from "../../assets/image/team/TeamHorse.png";
 import TextHorse from "../../assets/image/team/text-upper-horse.png";
+import Position from "../../assets/image/aboutus/position-one.png";
 const Team = () => {
   return (
     <>
-      <section className="py-5 all_bg_img">
+      <section className="py-5 all_bg_img  position-relative">
+        <div className="position-absolute top-0 end-0">
+          <img
+            className="moving_annimation"
+            src={Position}
+            alt="position-one"
+          />
+        </div>
         <div className="container mt-xxl-5 pt-xxl-5">
           <div className="text-center mt-xxl-5 pt-xxl-5 position-relative">
             <h4 className="main_heading mt-xxl-5 pt-xxl-5 h-80">Team</h4>

@@ -1,12 +1,28 @@
 import React from "react";
 import RoadmapPosition from "../../assets/image/roadmap/roadmap.png";
 import TextHorse from "../../assets/image/team/text-upper-horse.png";
+import Position from "../../assets/image/aboutus/position-one.png";
+import OurPositionOne from "../../assets/image/ourstory/position-one.png";
 const Roadmap = () => {
   return (
     <>
       <section className="bg_img py-5 position-relative d-none d-xxl-block  header_bg">
         <div className="position-absolute position_img">
           <img className="w-75" src={RoadmapPosition} alt="roadmap" />
+        </div>
+        <div className="position-absolute top-0 end-0">
+          <img
+            className="moving_annimation"
+            src={Position}
+            alt="position-one"
+          />
+        </div>
+        <div className="position-absolute top-50">
+          <img
+            className="moving_annimation"
+            src={OurPositionOne}
+            alt="position-one"
+          />
         </div>
         <div className="container pt-5">
           <div className="text-center position-relative">

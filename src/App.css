@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   font-family: "Comic Neue", cursive;
+  /* overflow-x: hidden; */
 }
 
 @font-face {
@@ -14,6 +15,14 @@
 .ff-pinky {
   font-family: PinkyUnicorn;
 }
+
+/* body {
+  background-image: url("./assets/image/body/body-bg.png");
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 :root {
   /*FONT--SIZES*/
   --font-xs: 16px;
@@ -161,14 +170,93 @@
   opacity: 0.7;
 }
 
+.moving_annimation {
+  animation: moving 1s infinite alternate;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/*LOADER==========CSS=================START*/
+.loader-fullscreen {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 99;
+}
+.loader-fullscreen img {
+  max-width: 200px;
+  width: 100%;
+  -webkit-animation: load-animation 3s ease infinite;
+  animation: load-animation 3s ease infinite;
+}
+
+@-webkit-keyframes load-animation {
+  30% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(0.99);
+    transform: scale(0.99);
+  }
+}
+@keyframes load-animation {
+  30% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(0.99);
+    transform: scale(0.99);
+  }
+}
+
+/*HERO====================SECTION==============CSS==================START*/
+.top-20 {
+  top: 20%;
+}
+
 /*ABOUT================SECTION====================CSS===================START*/
-.all_bg_img {
+/* .all_bg_img {
   background-image: url("./assets/image/faq/bg-img.png");
   min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 /*TEAM=============SECTION==================START*/
 .team_card_bg {
@@ -310,9 +398,9 @@
 }
 
 /*HEADER=====HERO=============SECTION=============CSS===================START*/
-.header_bg {
+.hero_bg {
   background-image: url("./assets/image/header/header-bg.png");
-  min-height: 100vh;
+  min-height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -332,13 +420,13 @@
 }
 
 /*OUR============STORY================SECTION================START*/
-.our_bg {
+/* .our_bg {
   background-image: url("./assets/image/faq/bg-img.png");
   min-height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 .center_horse {
   bottom: 45px;
   left: 53%;
@@ -393,5 +481,27 @@
 
   100% {
     transform: translateY(0);
+  }
+}
+.topscroll {
+  position: fixed;
+  right: 25px;
+  bottom: 45px;
+  cursor: pointer;
+  background: var(--black);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  animation: move 2s ease-in-out infinite;
+}
+
+/* ================================================== MEDIA QUERIES =============================================== */
+
+@media (max-width: 575.98px) {
+  .topscroll {
+    height: 40px;
+    right: 10px;
+    bottom: 30px;
+    width: 40px;
   }
 }

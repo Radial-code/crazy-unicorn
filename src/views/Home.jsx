@@ -7,7 +7,6 @@ import AboutUs from "../components/homepage/AboutUs";
 import OurStory from "../components/homepage/OurStory";
 import Footer from "../components/homepage/Footer";
 import Roadmap from "../components/homepage/Roadmap";
-import BackToTop from "../components/common/BackToTop";
 
 const Home = () => {
   return (
@@ -20,7 +19,6 @@ const Home = () => {
       <Team />
       <Faq />
       <Footer />
-      <BackToTop />
     </div>
   );
 };

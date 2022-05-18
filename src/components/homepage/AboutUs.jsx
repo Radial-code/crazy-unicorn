@@ -1,10 +1,26 @@
 import React from "react";
 import AboutUsHorse from "../../assets/image/aboutus/AboutUsHorse.png";
 import TextHorse from "../../assets/image/team/text-upper-horse.png";
+import Position from "../../assets/image/aboutus/position-one.png";
+import OurPositionOne from "../../assets/image/ourstory/position-one.png";
 const AboutUs = () => {
   return (
     <div>
-      <section className=" pt-5 header_bg">
+      <section className=" py-5 header_bg position-relative">
+        <div className="position-absolute top-0 end-0">
+          <img
+            className="moving_annimation"
+            src={Position}
+            alt="position-one"
+          />
+        </div>
+        <div className="position-absolute top-50">
+          <img
+            className="moving_annimation"
+            src={OurPositionOne}
+            alt="position-one"
+          />
+        </div>
         <div className="container">
           <div className="row">
             <div className="col-lg-6">

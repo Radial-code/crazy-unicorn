@@ -1,11 +1,27 @@
 import React from "react";
 import { Accordion } from "react-bootstrap";
 import TextHorse from "../../assets/image/team/text-upper-horse.png";
+import OurPositionOne from "../../assets/image/ourstory/position-one.png";
+import Position from "../../assets/image/aboutus/position-one.png";
 
 const Faq = () => {
   return (
     <>
-      <section className="py-5 header_bg">
+      <section className="py-5 header_bg position-relative">
+        <div className="position-absolute top-0">
+          <img
+            className="moving_annimation"
+            src={OurPositionOne}
+            alt="position-one"
+          />
+        </div>
+        <div className="position-absolute top-0 end-0">
+          <img
+            className="moving_annimation"
+            src={Position}
+            alt="position-one"
+          />
+        </div>
         <div className="container mt-5">
           <div className="text-center position-relative">
             <h5 className="main_heading h-80">FAQS</h5>

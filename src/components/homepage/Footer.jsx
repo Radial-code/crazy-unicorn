@@ -3,10 +3,26 @@ import FooterLogo from "../../assets/image/footer/footer-logo.png";
 // import { DiscordIcon } from "../common/Icons";
 import { DiscordIcon, InstaIcon, TwitterIcon } from "../common/Icons";
 import Input from "../../assets/image/footer/Input.png";
+import FooterPosition from "../../assets/image/footer/position.png";
+import FooterRainbow from "../../assets/image/footer/footer-rainbow.png";
 const Footer = () => {
   return (
     <>
-      <section className="py-5 all_bg_img">
+      <section className="py-5 all_bg_img position-relative">
+        <div className="position-absolute bottom-0">
+          <img
+            className="moving_annimation w-100"
+            src={FooterPosition}
+            alt="position-one"
+          />
+        </div>
+        <div className="position-absolute bottom-0 end-0">
+          <img
+            className="moving_annimation"
+            src={FooterRainbow}
+            alt="position-one"
+          />
+        </div>
         <div className="container pt-md-5">
           <div className="row">
             <div className="col-lg-8 m-auto">
