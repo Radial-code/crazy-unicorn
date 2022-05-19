@@ -4,7 +4,6 @@ import TextHorse from "../../assets/image/team/text-upper-horse.png";
 import Position from "../../assets/image/aboutus/position-one.png";
 import OurPositionOne from "../../assets/image/ourstory/position-one.png";
 import RoadmapSmall from "../../assets/image/roadmap/roadmap-small.png";
-import SmallImgHorse from "../../assets/image/roadmap/small-img-horse.png";
 const Roadmap = () => {
   return (
     <>

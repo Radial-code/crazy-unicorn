@@ -2,7 +2,6 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { DiscordIcon, InstaIcon, TwitterIcon } from "../common/Icons";
 import logo from "../../assets/image/header/header-logo.png";
-import HeroRainbow from "../../assets/image/hero/hero-rainbow.png";
 import HeroPositionOne from "../../assets/image/hero/hero-position-one.png";
 import HeroPositionTwo from "../../assets/image/hero/hero-position-two.png";
 import Hero from "./Hero";
