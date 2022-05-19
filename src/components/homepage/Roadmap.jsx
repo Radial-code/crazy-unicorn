@@ -125,21 +125,22 @@ const Roadmap = () => {
             alt="RoadmapSmall"
           />
         </div>
-        {/* <div className="position-absolute top-70">
-          <img src={SmallImgHorse} alt="RoadmapSmall" />
-        </div> */}
         <div className="container mt-5 py-5">
           <div className="text-center position-relative">
             <h4 className="main_heading h-80">RoadMap</h4>
             <img
-              className="position-absolute center_horse"
+              className="position-absolute center_horse moving_annimation_horse"
               src={TextHorse}
               alt="text-upper-horse"
             />
           </div>
           <div className="row pt-5 mt-sm-5 justify-content-end justify-content-md-start">
             <div className="col-4"></div>
-            <div className="col-6 col-sm-4 col-md-8 col-lg-3">
+            <div
+              className="col-6 col-sm-4 col-md-8 col-lg-3"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
               <div className="mb-4 margin_80 mt-5 pt-4 pt-md-5">
                 <h4 className="font-sm fw-normal ff-pinky">Phase 1</h4>
                 <p className="font-xs fw-normal">

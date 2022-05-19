@@ -22,7 +22,7 @@ const OurStory = () => {
             <div class="pt-4 position-relative">
               <h1 class="main_heading h-80">OUR STORY</h1>
               <img
-                className="position-absolute center_horse"
+                className="position-absolute center_horse moving_annimation_horse"
                 src={TextHorse}
                 alt="text-upper-horse"
               />
